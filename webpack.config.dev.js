@@ -22,10 +22,20 @@ module.exports = {
 
     module: {
         rules: [
-          {
-            test: /\.scss$/i,
-            use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader']
-          },
+            {
+                test: /\.m?js$/,
+                exclude: /node_modules/,
+                use: {
+                    loader: "babel-loader",
+                    options: {
+                        presets: ['@babel/preset-env']
+                    }
+                }
+            },
+            {
+                test: /\.scss$/i,
+                use: ['style-loader', 'css-loader', 'sass-loader']
+            },
         ],
     },
 

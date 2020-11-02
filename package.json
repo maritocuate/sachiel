@@ -4,7 +4,8 @@
   "description": "vanilla biolerplate",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --mode development --config webpack.config.dev.js --open"
+    "start": "webpack-dev-server --mode development --config webpack.config.dev.js --open",
+    "build": "webpack -p --config webpack.config.prod.js"
   },
   "repository": {
     "type": "git",
@@ -17,15 +18,20 @@
   },
   "homepage": "https://github.com/maritocuate/sachiel#readme",
   "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "babel-loader": "^8.1.0",
     "bootstrap": "^4.5.3",
     "css-loader": "^5.0.0",
+    "eslint": "^7.12.1",
+    "file-loader": "^6.2.0",
     "html-webpack-plugin": "^4.5.0",
     "jquery": "^3.5.1",
     "popper.js": "^1.16.1",
-    "postcss-loader": "^4.0.4",
     "sass": "^1.28.0",
     "sass-loader": "^10.0.4",
     "style-loader": "^2.0.0",
+    "url-loader": "^4.1.1",
     "webpack": "^4.44.2",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0"
