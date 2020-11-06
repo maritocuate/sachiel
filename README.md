@@ -15,4 +15,4 @@ Built to be able to write static pages.
 - `npm build` -> Will output a build folder
 
 ### Linting
-- `npm lint` -> Will lint all code under `src` folder. Use **JavaScript Standard Style**
+- `npm lint` -> Will lint all code under `src` folder. Uses **JavaScript Standard Style**
