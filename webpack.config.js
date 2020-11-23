@@ -1,20 +1,15 @@
-const { resolve } = require('path')
-
 // Plugins
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
+    mode: 'development',
+
     entry: './src/js/main.js',
 
     output: {
-        path: resolve(__dirname, '/build'),
+        path: __dirname + '/build',
+        //path: resolve(__dirname, '/build'),
         filename: 'bundle.js'
-    },
-
-    devServer: {
-        contentBase: path.join(__dirname, 'dist'),
-        compress: true,
-        port: 8600
     },
 
     devtool: 'inline-source-map',
