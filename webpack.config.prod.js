@@ -22,17 +22,16 @@ module.exports = {
                 loader: 'babel-loader',
             },
             {
-                exclude: [/\.html$/, /\.(js|jsx)$/, /\.css$/, /\.json$/],
-                loader: 'url-loader',
-                options: {
-                    limit: false,
-                    name: 'assets/[hash:8].[ext]',
-                },
-            },
-            {
-                test: /\.scss$/i,
+                test: /\.s[ac]ss$/i,
                 use: ['style-loader', 'css-loader', 'sass-loader']
             },
+            /* {
+                exclude: [/\.html$/, /\.(js|jsx)$/, /\.json$/],
+                loader: 'url-loader',
+                options: {
+                    limit: false
+                },
+            }, */
         ],
     },
 

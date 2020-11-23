@@ -4,7 +4,7 @@
   "description": "vanilla biolerplate",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --mode development --config webpack.config.dev.js --open",
+    "start": "webpack serve --open 'Google Chrome'",
     "build": "webpack -p --config webpack.config.prod.js"
   },
   "repository": {
@@ -20,6 +20,7 @@
   "devDependencies": {
     "@babel/core": "^7.12.3",
     "@babel/preset-env": "^7.12.1",
+    "@webpack-cli/serve": "^1.1.0",
     "babel-loader": "^8.1.0",
     "bootstrap": "^4.5.3",
     "css-loader": "^5.0.0",
