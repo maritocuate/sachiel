@@ -17,17 +17,18 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.js$/,
-                exclude: /node_modules/,
-                loader: 'babel-loader',
-            },
-            {
+                enforce: 'pre',
                 test: /\.js$/,
                 exclude: /node_modules/,
                 loader: 'eslint-loader',
                 options: {
                   fix: true
                 },
+            },
+            {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                loader: 'babel-loader',
             },
             {
                 test: /\.s[ac]ss$/i,
